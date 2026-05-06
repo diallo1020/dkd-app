@@ -1,30 +1,11 @@
-import { ShoppingCart } from 'lucide-react'
+import { House, Mail, PackageSearch, ShoppingCart } from 'lucide-react'
 import React from 'react'
 
 const Navbar = () => {
   return (
+    <>
    <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-       
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Accueil</a></li>
-        <li>
-          <a>Catégories</a>
-          <ul className="p-2">
-            <li><a>Bijoux</a></li>
-            <li><a>Sacs</a></li>
-            <li><a>Chaussures</a></li>
-            <li><a>Box</a></li>
-          </ul>
-        </li>
-        <li><a>Contact</a></li>
-      </ul>
-    </div>
     <img src="/images/logo.png" alt="logo" className='object-cover w-30 h-10 lg:h-20 lg:px-16' />
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -49,6 +30,14 @@ const Navbar = () => {
    <ShoppingCart />
   </div>
 </div>
+<div className='p-2' >
+  <ul className='flex justify-center items-center gap-6 '>
+    <li className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><House width={20} /><a>Accueil</a></li>
+    <li className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><PackageSearch width={20} /><a>Produit</a></li>
+    <li  className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><Mail width={20} /><a>Contact</a></li>
+  </ul>
+</div>
+</>
   )
 }
 
