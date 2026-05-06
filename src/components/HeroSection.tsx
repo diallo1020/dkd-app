@@ -32,7 +32,7 @@ const HeroSection = () => {
         <img src="/images/sac.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
       </div>
       <div>
-        <h3 className="font-bold text-sm">Chaussure</h3>
+        <h3 className="font-bold text-sm">Chaussures</h3>
         <img src="/images/chaussure.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
       </div>
        <div>
