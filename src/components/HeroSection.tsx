@@ -22,6 +22,24 @@ const HeroSection = () => {
       
       </div>
     </div>
+    <div className="flex justify-center items-start gap-8 py-4">
+      <div>
+        <h3 className="font-bold text-sm">Bijoux</h3>
+        <img src="/images/img2.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
+      </div>
+      <div>
+        <h3 className="font-bold text-sm">Sac</h3>
+        <img src="/images/sac.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
+      </div>
+      <div>
+        <h3 className="font-bold text-sm">Chaussure</h3>
+        <img src="/images/chaussure.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
+      </div>
+       <div>
+        <h3 className="font-bold text-sm">Box</h3>
+        <img src="/images/chaussure.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
+      </div>
+    </div>
   
     </>
   )
