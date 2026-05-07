@@ -1,13 +1,16 @@
 import { Search } from "lucide-react"
 import Card from "../components/Card"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 
 const Produits = () => {
   return (
+    <>
+    <div>
     <div>
       <Navbar/>
-    <div className="p-8 " >
+    <div className="lg:p-8 py-48 px-6" >
       <div className="space-y-2 lg:px-16" >
       <h1 className="font-bold text-xl lg:2xl">Notre Collection</h1>
       <p className="text-sm">Découvrez nos bijoux, montres, sacs et chaussures</p>
@@ -57,6 +60,9 @@ const Produits = () => {
     </div>
     </div>
     </div>
+    </div>
+    <Footer/>
+    </>
   )
 }
 

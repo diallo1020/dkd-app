@@ -2,7 +2,7 @@
 const HeroSection = () => {
   return (
     <>
-       <div className='grid grid-cols-2 pl-6 pb-2   bg-primary/20  via-primary/10 to-transparent
+       <div className='grid grid-cols-2 pl-6 p-2   bg-primary/20  via-primary/10 to-transparent
         items-center lg:gap-4  h-full lg:h-90 overflow-hidden'>
       <div className='flex flex-row gap-2 lg:p-16 md:p-4 '>
         <div className='flex flex-col gap-2'>

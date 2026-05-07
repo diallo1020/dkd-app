@@ -7,8 +7,10 @@ import Footer from '../components/Footer'
 
 export default function Accueil() {
   return (
-    <div>
-      <Navbar/>
+    <>
+     <Navbar/>
+    <div className='py-36'>
+     
    <HeroSection/>
     <h3 className='font-bold text-4xl text-center'>Nouveau arrivage</h3>
       <p className='text-center'>Parcourez notre nouvelle 
@@ -89,5 +91,6 @@ export default function Accueil() {
     <Footer/>
    
    </div>
+   </>
   )
 }
