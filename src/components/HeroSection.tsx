@@ -2,7 +2,7 @@
 const HeroSection = () => {
   return (
     <>
-       <div className='grid grid-cols-2 p-2  bg-primary/20  via-primary/10 to-transparent
+       <div className='grid grid-cols-2 pl-6 pb-2   bg-primary/20  via-primary/10 to-transparent
         items-center lg:gap-4  h-full lg:h-90 overflow-hidden'>
       <div className='flex flex-row gap-2 lg:p-16 md:p-4 '>
         <div className='flex flex-col gap-2'>
@@ -22,13 +22,13 @@ const HeroSection = () => {
       
       </div>
     </div>
-    <div className="flex justify-center items-start gap-8 py-4">
+    <div className="flex justify-center items-start gap-8 py-6 ">
       <div>
         <h3 className="font-bold text-sm">Bijoux</h3>
         <img src="/images/img2.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
       </div>
       <div>
-        <h3 className="font-bold text-sm">Sac</h3>
+        <h3 className="font-bold text-sm">Sacs</h3>
         <img src="/images/sac.jpg" alt="" className="w-30 h-20 object-cover rounded-3xl"/>
       </div>
       <div>

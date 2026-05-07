@@ -1,26 +1,44 @@
 import { House, Mail, PackageSearch, ShoppingCart } from 'lucide-react'
-import React from 'react'
+
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <>
+  
    <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <img src="/images/logo.png" alt="logo" className='object-cover w-30 h-10 lg:h-20 lg:px-16' />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Accueil</a></li>
+      <li><a  className='hover:bg-primary/50 '> 
+      <NavLink
+      to="/"
+      className={({ isActive })  =>
+        isActive
+           ? "text-primary font-bold"
+            : "text-black"
+      }
+      >
+
+       Accueil
+       </NavLink>
+       </a></li>
       <li>
-        <details>
-          <summary>Catégories</summary>
-          <ul className="p-2 bg-base-100 w-40 z-1">
-             <li><a>Bijoux</a></li>
-            <li><a>Sacs</a></li>
-            <li><a>Chaussures</a></li>
-            <li><a>Box</a></li>
-          </ul>
-        </details>
+       <a>
+        <NavLink 
+        to="/Produits"
+          className={
+            ({isActive}) =>
+              isActive
+            ?"text-primary font-bold"
+            : "text-black"
+          }
+          >
+         Produits
+         </NavLink>
+         </a>
       </li>
       <li><a>Contact</a></li>
     </ul>
@@ -30,10 +48,24 @@ const Navbar = () => {
    <ShoppingCart />
   </div>
 </div>
-<div className='p-2' >
+<div className='p-2 lg:hidden' >
   <ul className='flex justify-center items-center gap-6 '>
-    <li className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><House width={20} /><a>Accueil</a></li>
-    <li className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><PackageSearch width={20} /><a>Produit</a></li>
+    <li >
+    <a>
+      <NavLink to="/"
+      className={
+        ({isActive}) =>
+          `flex flex-col justify-center items-center rounded-xl p-2 text-sm ${
+          isActive
+        ?"text-primary font-bold"
+        :"text-black"
+      }`
+      }
+      >
+        <House width={20} />
+      Accueil</NavLink>
+    </a></li>
+    <li className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><PackageSearch width={20} /><a><Link to="/Produits">Produit</Link></a></li>
     <li  className='flex flex-col justify-center items-center rounded-xl p-2 text-sm'><Mail width={20} /><a>Contact</a></li>
   </ul>
 </div>

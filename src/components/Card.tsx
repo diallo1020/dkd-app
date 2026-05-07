@@ -16,7 +16,7 @@ const Card = ({image, title, description, price} : CardImages) => {
            <p className='font-bold text-2xl text-primary'>{price}</p>
            <div className='flex gap-4'>
             <button className='btn border border-primary text-primary'>Panier</button>
-            <button className='btn btn-primary'>Achèter</button>
+            <button className='btn btn-primary text-white'>Achèter</button>
            </div>
          </div>
       
