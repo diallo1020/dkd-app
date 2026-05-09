@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 type CardImages ={
     image: string
     title: string
@@ -16,7 +18,7 @@ const Card = ({image, title, description, price} : CardImages) => {
            <p className='font-bold text-2xl text-primary'>{price}</p>
            <div className='flex gap-4'>
             <button className='btn border border-primary text-primary'>Panier</button>
-            <button className='btn btn-primary text-white'>Achèter</button>
+            <button className='btn btn-primary text-white'><Link to="/Panier">Achèter</Link></button>
            </div>
          </div>
       

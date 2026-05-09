@@ -1,12 +1,15 @@
 import { Mail, MapPinHouse, Phone } from "lucide-react"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Commande from "./Commande"
+
 
 
 const Contact = () => {
   return (
     <>
     <Navbar/>
+    
     <div className="lg:py-6 lg:px-32 py-48 px-6">
       <h1 className="flex justify-center items-center font-bold text-2xl lg:text-3xl ">Contactez-nous</h1>
       <p className="lg:flex lg:justify-center lg:items-center text-center">Nous sommes à votre écoute pour toute question </p>
@@ -84,6 +87,7 @@ const Contact = () => {
       </div>
     </div>
       <Footer/>
+   
     </>
   )
 }
