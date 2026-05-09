@@ -73,7 +73,7 @@ const Contact = () => {
          <h3 className="font-bold text-2xl">Horaires d'ouverture</h3>
          <div className="flex justify-between border bg-white p-4 rounded-xl  ">
             <p>Lundi - Vendredi</p>
-            <p>8h - 18h</p>
+            <p>8h - 19h</p>
          </div>
          <div className="flex justify-between border bg-white p-4 rounded-xl  ">
             <p>Samedi</p>
